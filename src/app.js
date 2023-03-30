@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 app.engine('hbs', handlebars({ extname: '.hbs' }));
-app.set('view engine', 'hbs');
+            app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, '/resources/views'));
 app.use('/css', express.static(path.join(__dirname, '/public/css')));
 
