@@ -28,7 +28,8 @@
   "homepage": "https://github.com/nguyenson2603/nodejs_blog_ssnguyen#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "express-handlebars": "^5.1.0"
+    "express-handlebars": "^5.1.0",
+    "mongoose": "^7.0.3"
   },
   "devDependencies": {
     "node-sass": "^8.0.0",

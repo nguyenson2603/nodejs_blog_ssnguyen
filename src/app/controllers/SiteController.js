@@ -1,7 +1,11 @@
+const Product = require('../models/Product');
+
 class SiteController {
     // GET/home
-    home(req, res) {
-        res.render('home');
+    async home(req, res) {
+        const model = await Product.find({});
+        res.json(model);
+        // res.render('home');
     }
 
     // GET/search
