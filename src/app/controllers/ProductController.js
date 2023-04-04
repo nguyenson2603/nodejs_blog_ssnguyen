@@ -27,8 +27,7 @@ class ProductController {
     store(req, res, next) {
         const data = req.body;
         const model = new Product(data);
-        model
-            .save()
+        model.save()
             .then(() => {
                 res.redirect('/');
             })

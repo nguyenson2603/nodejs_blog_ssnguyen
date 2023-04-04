@@ -9,7 +9,7 @@ const Product = new Schema(
         name: { type: String },
         description: { type: String },
         thumb: { type: String },
-        slug: { type: String, slug: 'name' },
+        slug: { type: String, slug: 'name', unique: true },
     },
     { timestamps: true },
 );
